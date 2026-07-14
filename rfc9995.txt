@@ -8,7 +8,7 @@ Category: Standards Track                                      S. Lasker
 ISSN: 2070-1721                                                         
                                                              H. Birkholz
                                                           Fraunhofer SIT
-                                                               June 2026
+                                                               July 2026
 
 
         CBOR Object Signing and Encryption (COSE) Hash Envelope
@@ -273,45 +273,45 @@ Table of Contents
    from 256 to 65535' range per the 'Specification Required'
    registration policy [RFC8126].
 
-   +=========+=====+=====+======================+============+=========+
-   |Name     |Label|Value|Value Registry        |Description |Reference|
-   |         |     |Type |                      |            |         |
-   +=========+=====+=====+======================+============+=========+
-   |payload- |258  |int  |[COSE-Algorithms]     |The hash    |RFC 9995,|
-   |hash-alg |     |     |                      |algorithm   |Section 3|
-   |         |     |     |                      |used to     |         |
-   |         |     |     |                      |produce the |         |
-   |         |     |     |                      |payload of  |         |
-   |         |     |     |                      |a           |         |
-   |         |     |     |                      |COSE_Sign1  |         |
-   +---------+-----+-----+----------------------+------------+---------+
-   |preimage-|259  |uint |[CoAP-Content-Formats]|The         |RFC 9995,|
-   |content- |     |/    |                      |content-    |Section 3|
-   |type     |     |tstr |                      |format      |         |
-   |         |     |     |                      |number or   |         |
-   |         |     |     |                      |content-    |         |
-   |         |     |     |                      |type        |         |
-   |         |     |     |                      |(media-type |         |
-   |         |     |     |                      |name) of    |         |
-   |         |     |     |                      |data that   |         |
-   |         |     |     |                      |has been    |         |
-   |         |     |     |                      |hashed to   |         |
-   |         |     |     |                      |produce the |         |
-   |         |     |     |                      |payload of  |         |
-   |         |     |     |                      |the         |         |
-   |         |     |     |                      |COSE_Sign1  |         |
-   +---------+-----+-----+----------------------+------------+---------+
-   |payload- |260  |tstr |(none)                |The string  |RFC 9995,|
-   |location |     |     |                      |or URI hint |Section 3|
-   |         |     |     |                      |for the     |         |
-   |         |     |     |                      |location of |         |
-   |         |     |     |                      |the data    |         |
-   |         |     |     |                      |hashed to   |         |
-   |         |     |     |                      |produce the |         |
-   |         |     |     |                      |payload of  |         |
-   |         |     |     |                      |a           |         |
-   |         |     |     |                      |COSE_Sign1  |         |
-   +---------+-----+-----+----------------------+------------+---------+
+   +=========+=====+======+======================+===========+=========+
+   |Name     |Label|Value |Value Registry        |Description|Reference|
+   |         |     |Type  |                      |           |         |
+   +=========+=====+======+======================+===========+=========+
+   |payload- |258  |int   |[COSE-Algorithms]     |The hash   |RFC 9995,|
+   |hash-alg |     |      |                      |algorithm  |Section 3|
+   |         |     |      |                      |used to    |         |
+   |         |     |      |                      |produce the|         |
+   |         |     |      |                      |payload of |         |
+   |         |     |      |                      |a          |         |
+   |         |     |      |                      |COSE_Sign1 |         |
+   +---------+-----+------+----------------------+-----------+---------+
+   |preimage-|259  |uint /|[CoAP-Content-Formats]|The        |RFC 9995,|
+   |content- |     |tstr  |                      |content-   |Section 3|
+   |type     |     |      |                      |format     |         |
+   |         |     |      |                      |number or  |         |
+   |         |     |      |                      |content-   |         |
+   |         |     |      |                      |type       |         |
+   |         |     |      |                      |(media-type|         |
+   |         |     |      |                      |name) of   |         |
+   |         |     |      |                      |data that  |         |
+   |         |     |      |                      |has been   |         |
+   |         |     |      |                      |hashed to  |         |
+   |         |     |      |                      |produce the|         |
+   |         |     |      |                      |payload of |         |
+   |         |     |      |                      |the        |         |
+   |         |     |      |                      |COSE_Sign1 |         |
+   +---------+-----+------+----------------------+-----------+---------+
+   |payload- |260  |tstr  |(none)                |The string |RFC 9995,|
+   |location |     |      |                      |or URI hint|Section 3|
+   |         |     |      |                      |for the    |         |
+   |         |     |      |                      |location of|         |
+   |         |     |      |                      |the data   |         |
+   |         |     |      |                      |hashed to  |         |
+   |         |     |      |                      |produce the|         |
+   |         |     |      |                      |payload of |         |
+   |         |     |      |                      |a          |         |
+   |         |     |      |                      |COSE_Sign1 |         |
+   +---------+-----+------+----------------------+-----------+---------+
 
               Table 1: Newly Registered COSE Header Parameters
 
